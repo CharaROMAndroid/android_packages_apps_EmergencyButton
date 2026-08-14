@@ -1,29 +1,32 @@
-# Panic
+# EmergencyButton
 
-Panic is an app that allows users to uninstall selected apps & run certain actions when a system-wide panic intent is triggered.
-It leverages the Guardian Project's [PanicKit](https://github.com/guardianproject/PanicKit) library for working with panic and related
-intents.
+A CharaROM fork of [Panic](https://github.com/CalyxOS/platform_packages_apps_Panic) by CalyxOS, which uses Guardian Project's [PanicKit](https://github.com/guardianproject/PanicKit) library.
 
-## Development
+Package name changed from `org.calyxos.panic` to `com.android.emergencybutton` for better obscurity - blends in with system apps and avoids detection by integrity checkers that flag known privacy tools.
 
-Panic is compatible with both AOSP and Gradle build systems and seamlessly integrates with CalyxOS.
+## What is it?
 
-To build in AOSP, add the following lines to an included Makefile:
+An app that allows users to uninstall selected apps and run certain actions when a system-wide panic intent is triggered. Works with [TriggerResponse](https://github.com/CharaROMAndroid/android_packages_apps_TriggerResponse) (CharaROM's fork of Ripple) as the panic trigger.
 
-```makefile
-# Apps
-PRODUCT_PACKAGES += \
-    Panic \
+## CharaROM Integration
+
+Requires a `frameworks/base` patch to allow silent uninstallation:
+
+```java
+// In DeletePackageHelper.java isCallerAllowedToSilentlyUninstall()
+if (callingUid == snapshot.getPackageUid("com.android.emergencybutton", 0, callingUserId)) {
+    return true;
+}
 ```
 
-To build in Android Studio, clone this repo to get started. Ensure that the testing device targets
-a supported API level. The `debug` build type is additionally signed with AOSP signing keys (test keys) to
-allow installation over the existing app in the system.
+Add to product makefile:
 
-Various patches might be required across the OS to support all the features Panic offers, depending
-upon the use case. Please check [our Gerrit instance](https://review.calyxos.org/) for a complete list of patches.
+```makefile
+PRODUCT_PACKAGES += \
+    EmergencyButton \
+    TriggerResponse
+```
 
-## Copyright and License
+## License
 
-Bellis is licensed and distributed under the [Apache 2.0 License](LICENSE/Apache-2.0.txt). See files for individual
-copyright holder's information.
+Apache 2.0, same as upstream.
