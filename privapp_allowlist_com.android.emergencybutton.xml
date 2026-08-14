@@ -4,7 +4,7 @@
   SPDX-License-Identifier: Apache-2.0
   -->
 <permissions>
-    <privapp-permissions package="org.calyxos.panic">
+    <privapp-permissions package="com.android.emergencybutton">
         <permission name="android.permission.DELETE_PACKAGES" />
     </privapp-permissions>
 </permissions>

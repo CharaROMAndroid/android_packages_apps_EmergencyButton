@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.calyxos.panic.applist
+package com.android.emergencybutton.applist
 
 import android.content.SharedPreferences
 import android.os.Bundle
@@ -22,9 +22,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
-import org.calyxos.panic.R
-import org.calyxos.panic.main.MainActivityViewModel
-import org.calyxos.panic.utils.CommonUtils
+import com.android.emergencybutton.R
+import com.android.emergencybutton.main.MainActivityViewModel
+import com.android.emergencybutton.utils.CommonUtils
 import javax.inject.Inject
 
 @AndroidEntryPoint(Fragment::class)

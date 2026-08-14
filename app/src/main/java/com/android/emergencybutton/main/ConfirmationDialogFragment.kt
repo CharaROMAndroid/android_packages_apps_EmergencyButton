@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.calyxos.panic.main
+package com.android.emergencybutton.main
 
 import android.app.Activity
 import android.app.Dialog
@@ -15,7 +15,7 @@ import androidx.fragment.app.DialogFragment
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import dagger.hilt.android.AndroidEntryPoint
 import info.guardianproject.panic.PanicResponder
-import org.calyxos.panic.R
+import com.android.emergencybutton.R
 
 @AndroidEntryPoint(DialogFragment::class)
 class ConfirmationDialogFragment : Hilt_ConfirmationDialogFragment() {

@@ -8,7 +8,7 @@ package {
 }
 
 android_app {
-    name: "Panic",
+    name: "EmergencyButton",
     platform_apis: true,
     system_ext_specific: true,
     privileged: true,
@@ -43,7 +43,7 @@ android_app {
     },
 
     required: [
-        "privapp_allowlist_org.calyxos.panic",
+        "privapp_allowlist_com.android.emergencybutton",
     ],
 }
 
@@ -54,8 +54,8 @@ java_import {
 }
 
 prebuilt_etc {
-    name: "privapp_allowlist_org.calyxos.panic",
-    src: "privapp_allowlist_org.calyxos.panic.xml",
+    name: "privapp_allowlist_com.android.emergencybutton",
+    src: "privapp_allowlist_com.android.emergencybutton.xml",
     system_ext_specific: true,
     sub_dir: "permissions",
     filename_from_src: true,

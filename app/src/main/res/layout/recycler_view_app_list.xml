@@ -67,7 +67,7 @@
             android:maxLines="2"
             android:textColor="?android:textColorSecondary"
             android:textSize="14sp"
-            tools:text="org.calyxos.panic" />
+            tools:text="com.android.emergencybutton" />
 
     </LinearLayout>
 

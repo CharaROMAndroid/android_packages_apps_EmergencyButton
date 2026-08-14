@@ -12,11 +12,11 @@ plugins {
 }
 
 android {
-    namespace = "org.calyxos.panic"
+    namespace = "com.android.emergencybutton"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "org.calyxos.panic"
+        applicationId = "com.android.emergencybutton"
         minSdk = 33
         targetSdk = 35
         versionCode = 1

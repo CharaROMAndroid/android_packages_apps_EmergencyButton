@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.calyxos.panic.settings
+package com.android.emergencybutton.settings
 
 import android.os.Bundle
 import android.view.View
@@ -11,7 +11,7 @@ import androidx.appcompat.widget.Toolbar
 import androidx.navigation.findNavController
 import androidx.preference.PreferenceFragmentCompat
 import dagger.hilt.android.AndroidEntryPoint
-import org.calyxos.panic.R
+import com.android.emergencybutton.R
 
 @AndroidEntryPoint(PreferenceFragmentCompat::class)
 class SettingsFragment : Hilt_SettingsFragment() {

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.calyxos.panic.utils
+package com.android.emergencybutton.utils
 
 import android.content.Context
 import android.content.pm.ApplicationInfo
@@ -12,7 +12,7 @@ import android.content.pm.PackageInfo
 import android.content.pm.PackageManager
 import android.util.Log
 import androidx.core.graphics.drawable.toBitmap
-import org.calyxos.panic.models.App
+import com.android.emergencybutton.models.App
 
 object CommonUtils {
 

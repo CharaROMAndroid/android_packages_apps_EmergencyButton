@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.calyxos.panic.applist
+package com.android.emergencybutton.applist
 
 import android.view.LayoutInflater
 import android.view.View
@@ -19,8 +19,8 @@ import androidx.recyclerview.widget.RecyclerView
 import dagger.assisted.Assisted
 import dagger.assisted.AssistedFactory
 import dagger.assisted.AssistedInject
-import org.calyxos.panic.R
-import org.calyxos.panic.models.App
+import com.android.emergencybutton.R
+import com.android.emergencybutton.models.App
 import javax.inject.Inject
 import javax.inject.Singleton
 

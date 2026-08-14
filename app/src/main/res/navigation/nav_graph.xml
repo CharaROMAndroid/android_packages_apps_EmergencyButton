@@ -11,17 +11,17 @@
 
     <fragment
         android:id="@+id/mainFragment"
-        android:name="org.calyxos.panic.main.MainFragment"
+        android:name="com.android.emergencybutton.main.MainFragment"
         android:label="Main"
         tools:layout="@layout/fragment_main" />
     <fragment
         android:id="@+id/settingsFragment"
-        android:name="org.calyxos.panic.settings.SettingsFragment"
+        android:name="com.android.emergencybutton.settings.SettingsFragment"
         android:label="Settings"
         tools:layout="@layout/fragment_settings" />
     <fragment
         android:id="@+id/appListFragment"
-        android:name="org.calyxos.panic.applist.AppListFragment"
+        android:name="com.android.emergencybutton.applist.AppListFragment"
         android:label="App List"
         tools:layout="@layout/fragment_app_list" />
 </navigation>

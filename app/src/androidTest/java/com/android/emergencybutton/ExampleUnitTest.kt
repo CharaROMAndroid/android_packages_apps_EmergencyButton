@@ -1,4 +1,4 @@
-package org.calyxos.panic
+package com.android.emergencybutton
 
 import org.junit.Assert.assertEquals
 import org.junit.Test

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.calyxos.panic.main
+package com.android.emergencybutton.main
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -14,9 +14,9 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
-import org.calyxos.panic.models.App
-import org.calyxos.panic.utils.CommonUtils
-import org.calyxos.panic.utils.CommonUtils.panicAppListKey
+import com.android.emergencybutton.models.App
+import com.android.emergencybutton.utils.CommonUtils
+import com.android.emergencybutton.utils.CommonUtils.panicAppListKey
 import javax.inject.Inject
 
 @HiltViewModel

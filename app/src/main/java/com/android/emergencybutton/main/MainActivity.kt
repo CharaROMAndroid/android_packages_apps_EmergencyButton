@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.calyxos.panic.main
+package com.android.emergencybutton.main
 
 import android.os.Bundle
 import androidx.activity.viewModels
@@ -15,7 +15,7 @@ import com.google.android.material.color.DynamicColors
 import dagger.hilt.android.AndroidEntryPoint
 import info.guardianproject.panic.Panic
 import info.guardianproject.panic.PanicResponder
-import org.calyxos.panic.R
+import com.android.emergencybutton.R
 
 @AndroidEntryPoint(AppCompatActivity::class)
 class MainActivity : Hilt_MainActivity() {

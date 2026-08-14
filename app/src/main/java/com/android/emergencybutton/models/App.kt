@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.calyxos.panic.models
+package com.android.emergencybutton.models
 
 import android.graphics.Bitmap
 
