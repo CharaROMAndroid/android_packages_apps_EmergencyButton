@@ -36,6 +36,11 @@ class MainActivity : Hilt_MainActivity() {
 
         when (intent?.action) {
             Panic.ACTION_TRIGGER -> {
+                // Only the connected trigger app may request destructive panic actions.
+                if (!PanicResponder.receivedTriggerFromConnectedApp(this)) {
+                    finish()
+                    return
+                }
                 val prefManager = PreferenceManager.getDefaultSharedPreferences(this)
                 viewModel.uninstallPanicApps()
                 if (prefManager.getBoolean("exit_app", true)) finish()
